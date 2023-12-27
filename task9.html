@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    background-color: burlywood
+}
+#music{
+    width: 5000px;
+    height: 5000px;
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 35%;
+}
+#music #bar{
+    width:7px;
+    border-radius: 5px;
+    background: white;
+    animation: movements 1.5s ease-in-out infinite;
+    display:inline-block;
+}
+#music #bar:nth-child(1){
+    background: blue;
+    animation-delay: 1s;
+}
+#music #bar:nth-child(2){
+    background: red;
+    animation-delay:2s;
+}
+#music #bar:nth-child(3){
+    background:greenyellow;
+    animation-delay: 4s;
+}
+#music #bar:nth-child(4){
+    background:brown;
+    animation-delay:6s;
+}
+#music #bar:nth-child(5){
+    background: goldenrod;
+    animation-delay: 1s;
+}
+#music #bar:nth-child(6){
+    background:blueviolet;
+    animation-delay:3s;
+}
+#music #bar:nth-child(7){
+    background:black;
+    animation-delay:4s;
+}
+#music #bar:nth-child(8){
+    background: mediumaquamarine;
+    animation-delay:8s;
+}
+#music #bar:nth-child(9){
+    background:palegreen;
+    animation-delay:5s;
+}
+#music #bar:nth-child(10){
+    background:rebeccapurple;
+    animation-delay:2s;
+}
+#music #bar:nth-child(11){
+    background:mediumseagreen;
+    animation-delay:3s;
+}
+#music #bar:nth-child(12){
+    background-color: mediumslateblue;
+    animation-delay: 2s;
+}
+@keyframes movements {
+    0% ,100%{
+        height: 10px;
+    }
+    50%{
+        height: 300px;
+    }
+}
+</style>
+<body>
+    <center>
+        <h1>MUSIC</h1>
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <audio controls>
+        <source src="./song2.html.mp3">
+    </audio>
+    <div id="music">
+        <div id="bar"></div>
+        <div id="bar"></div>
+        <div id="bar"></div>
+        <div id="bar"></div>
+        <div id="bar"></div>
+        <div id="bar"></div>
+        <div id="bar"></div>
+        <div id="bar"></div>
+        <div id="bar"></div>
+        <div id="bar"></div>
+        <div id="bar"></div>
+        <div id="bar"></div>
+    </div>
+</body>
+</html>
